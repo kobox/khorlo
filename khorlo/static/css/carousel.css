@@ -1,0 +1,275 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+@font-face {
+    font-family: 'franchiseregular';
+    src: url('franchise-bold-webfont.eot');
+    src: url('franchise-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('franchise-bold-webfont.woff') format('woff'),
+         url('franchise-bold-webfont.ttf') format('truetype'),
+         url('franchise-bold-webfont.svg#franchiseregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+  background: #608D4E url('../img/bg_03.png');
+}
+
+header {
+    background: url("../img/irongrip.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-bottom: 1px solid #003333;
+}
+article {
+  background: none repeat scroll 0 0 rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+  padding: 20px;
+  position: relative;
+  z-index: 2;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+}
+footer {
+    background: url("../img/footer_grn_bg.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.social-slide {
+    background-position: 0px -1px;
+	height: 24px;
+	width: 24px;
+	margin: 2px;
+	float: left;
+    vertical-align: middle;
+	-webkit-transition: all ease 0.3s;
+	-moz-transition: all ease 0.3s;
+	-o-transition: all ease 0.3s;
+	-ms-transition: all ease 0.3s;
+	transition: all ease 0.3s;
+}
+.social-slide.twitter{
+    background-image: url('../img/twitter.png');
+}
+.social-slide.facebook{
+    background-image: url('../img/facebook.png');
+}
+.social-slide:hover {
+	background-position: 0px -25px;
+	box-shadow: 0px 0px 4px 1px rgba(61, 64, 85, 0.3);
+}
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+.navbar-wrapper .navbar {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 500px;
+  margin-bottom: 50px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  background: none repeat scroll 0 0 rgba(10, 10, 20, 0.5);
+  bottom: 60px;
+  z-index: 10;
+}
+.carousel-caption p.clean{
+    background: none repeat scroll 0 0 rgba(10, 10, 20, 0.5);   
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Pad the edges of the mobile views a bit */
+.marketing {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.img-circle {
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.698) inset, 0 0 0 12px rgba(61, 64, 85, 0.3);
+  overflow: hidden;
+}
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+#posts-list article {
+  margin-bottom: 40px;
+  padding-left: 160px;
+  position: relative;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+  /* Remove the edge padding needed for mobile */
+  .marketing {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 15px;
+  }
+  .navbar-wrapper .container {
+    padding-left:  15px;
+    padding-right: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-left:  0;
+    padding-right: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+/*---------*/
+ul.navlinks li{
+
+  display: inline;
+  padding:0 15px 0 0;
+  font:20px 'Lobster Two',italic;
+  letter-spacing: 1px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 3px 8px #2A2A2A;
+    
+    }
+    ul.navlinks {
+        text-align:right;
+        text-transform: uppercase; color: #eee; font: 15px Helvetica, Arial, Sans-Serif;
+    }
+ul.navlinks:hover{
+    
+}
+ul.navlinks li.active a {
+  /*font-weight: bold;*/
+  color:#DEBB27;
+}
+div.logo {
+
+        width:103px;
+        margin:-10px auto 10px;
+
+}
+html.svg div.logo a {
+
+        background-image:url(/img/logo.svg);
+}
+html.no-svg div.logo a {
+
+        background-image:url(/img/logo.png);
+}
+div.logo a {
+
+    display:block;
+    /* width:103px;
+    height:63px;*/
+    background-repeat:no-repeat;
+
+}
+div.logo a h1{
+    
+    font-size:9px;
+    letter-spacing: 0.15em;
+    line-height:15px;
+    text-transform: uppercase;
+    text-align:center;
+    font-weight: 400;
+
+}
+#sidebar {
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+  float: left;
+  margin-bottom: 40px;
+  margin-top: -58px;
+  padding: 45px 10px 20px;
+  position: relative;
+  width: 200px;
+}
+
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
