@@ -1,3 +1,14 @@
 from django.db import models
+from mezzanine.core.models import Displayable, Ownable
 
-# Create your models here.
+
+class Author(Displayable, Ownable):
+    dob = models.DateField("Date of birth")
+
+
+class Book(models.Model):
+    author = models.ForeignKey("Author")
+    cover = models.ImageField(upload_to="authors")
+
+
+

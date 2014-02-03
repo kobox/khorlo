@@ -36,6 +36,7 @@ article {
 }
 footer {
     background: url("../img/footer_grn_bg.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    margin-top: 50px;
 }
 .social-slide {
     background-position: 0px -1px;
@@ -125,7 +126,7 @@ footer {
 }
 
 /* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
+.marketing .col-lg-4, .col-lg-3 {
   text-align: center;
   margin-bottom: 20px;
 }
@@ -146,12 +147,12 @@ footer {
 ------------------------- */
 
 .featurette-divider {
-  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+  margin: 40px 0; /* Space out the Bootstrap <hr> more */
 }
 
 /* Thin out the marketing headings */
 .featurette-heading {
-  font-weight: 300;
+  font-weight: 200;
   line-height: 1;
   letter-spacing: -1px;
 }
@@ -199,7 +200,7 @@ footer {
   }
 
   .featurette-heading {
-    font-size: 50px;
+    font-size: 40px;
   }
 /*---------*/
 ul.navlinks li{
@@ -269,7 +270,7 @@ div.logo a h1{
 }
 
 @media (min-width: 992px) {
-  .featurette-heading {
+  /*.featurette-heading {
     margin-top: 120px;
-  }
+  }*/
 }

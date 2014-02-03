@@ -1,0 +1,43 @@
+{% load mezzanine_tags i18n staticfiles %}
+<footer>
+<div class="container marketing">
+<div class="row">
+<div class="col-lg-4">
+    <h4>Zapraszamy do kontaktu</h4>
+    <span class="glyphicon glyphicon-phone-alt">&nbsp;</span> 58 661 70 91<br/>
+    <span class="glyphicon glyphicon-earphone">&nbsp;</span> 603 644 473<br/>
+    <span class="glyphicon glyphicon-envelope">&nbsp;</span> <a hreff="mailto:biuro@khorlo.pl">biuro@khorlo.pl</a>
+</div>
+<div class="col-lg-4">
+    <h4>Godziny przyjęć</h4>
+<p>Pn. - Pt.: 9.00-19.00<br/>
+Sobota.: 9.00-15.00
+</p>
+</div>
+<div class="col-lg-4">
+    <h4>Nasza siedziba</h4>
+<address>
+    <p>ul. Świętojańska 92/B1
+        <br/>
+        81-388 Gdynia</p>
+</address>
+</div>
+{% comment %}<div class="col-lg-3"><img  src="{% static "img/map.png" %}"alt="Wieloletnie Tradycja"></div>{% endcomment %}
+</div>
+<div class="row">
+<p class="site-info text-center">
+    {% trans "Powered by" %}
+    <a href="http://mezzanine.jupo.org">Mezzanine</a>{% ifinstalled cartridge.shop %},
+    <a href="http://cartridge.jupo.org">Cartridge</a>{% endifinstalled %}
+    {% trans "and" %}
+    <a href="http://www.djangoproject.com">Django</a>
+    <span class="separator">|</span>
+    Projekt i wykonanie <a target="_blank" href="http://studioit.com.pl"><img src="{% static "img/studio.png" %}"/></a>
+    {% ifinstalled mezzanine.mobile %}
+    <span class="separator">|</span>
+    <a href="{% url "set_device" "mobile" %}?next={{ request.path }}">{% trans "View Mobile Site" %}</a>
+    {% endifinstalled %}
+</p>
+</div>
+</div>
+</footer>

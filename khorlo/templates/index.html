@@ -44,29 +44,11 @@
    <div class="navbar-wrapper">
      {% page_menu "pages/menus/primary.html" %}
    </div>
-
 </div>
 </header>
 <body id="{% block body_id %}body{% endblock %}">
 
-{% comment %}<div class="navbar navbar-default navbar-fixed-top" role="navigation">
-<div class="container">
-<div class="navbar-header">
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="sr-only">{% trans "Toggle Navigation" %}</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-    </button>
-    {% if settings.SITE_TITLE %}<a class="navbar-brand" href="/">{{ settings.SITE_TITLE }}</a>{% endif %}
-    {% if settings.SITE_TAGLINE %}<p class="navbar-text visible-lg">{{ settings.SITE_TAGLINE }}</p>{% endif %}
-</div>
-<div class="navbar-collapse collapse">
-    {% search_form "all" %}
-    {% page_menu "pages/menus/dropdown.html" %}
-</div>
-</div>
-</div>{% endcomment %}
+
 
 <!-- Carousel
     ================================================== -->
@@ -83,7 +65,7 @@
           <div class="container">
             <div class="carousel-caption">
               <h1>Medycyna Tybetańska blisko Ciebie.</h1>
-              <p> praktykowana od wieków w Tybecie oraz terenach sąsiadujących, tradycyjna forma medycyny, która wykorzystuje kompleksowe podejście diagnostyczne, np. analizę pulsu, śliny, uryny, diety, zachowania, kondycji ciała. Szeroko są stosowane lekarstwa na bazie naturalnych składników roślinnych i mineralnych. Medycyna ta wykorzystuje również praktyczną wiedzę pochodzącą z kultywowania tantr buddyjskich</p>
+              <p> praktykowana od wieków w Tybecie oraz terenach sąsiadujących, tradycyjna forma medycyny, która wykorzystuje kompleksowe podejście diagnostyczne, np. analizę pulsu, języka, diety, zachowania, kondycji ciała. Szeroko są stosowane lekarstwa na bazie naturalnych składników roślinnych i mineralnych.</p>
               <p class="clean"><a class="btn btn-lg btn-primary" href="#" role="button">Czytaj więcej...</a></p>
             </div>
           </div>
@@ -92,9 +74,9 @@
           <img src="{% static "img/slide_b.png" %}" alt="Second slide">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Another example headline.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+              <h1>W prowadzonych przez nas terapiach, stosujemy wyłącznie naturalne i sprawdzone metody.</h1>
+              <p>Zioła, masaże, akupunkturę i inne...</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Czytaj więcej...</a></p>
             </div>
           </div>
         </div>
@@ -102,9 +84,9 @@
           <img src="{% static "img/slide_c.png" %}" alt="Third slide">
           <div class="container">
             <div class="carousel-caption">
-              <h1>One more for good measure.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+              <h1>Zrelaksuj się z nami!</h1>
+              <p>Zapoznaj się z naszą szeroką ofertą masaży,a także zabiegów pielęgnacyjnych...</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sprawdź</a></p>
             </div>
           </div>
         </div>
@@ -121,19 +103,19 @@
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="col-lg-4">
-          <img class="img-circle" src="{% static "img/spa.png" %}"alt="Wieloletnie Tradycja">
+          <img class="img-circle" src="{% static "img/kolo.png" %}"alt="Wieloletnie Tradycja">
           <h2>Wieloletnia Tradycja</h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+          <p>Khor lo - w dosłownym znaczeniu "koło" lub "okrąg", jest elementem wykorzystywanym w filozofii buddyjskiej symbolizujący Wspaniałe Koło Nauki Buddy. Według założeń medycyny tybetańskiej wpływ na zdrowie człowieka ma wiele czynników, takich jak: styl życia, dieta, klimat, pogoda, stan ducha. "</p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img class="img-circle"src="{% static "img/spa.png" %}" alt="Generic placeholder image">
+          <img class="img-circle"src="{% static "img/exp.png" %}" alt="Generic placeholder image">
           <h2>Doświadczenie</h2>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+          <p>Prowadzimy gabinet medycyny alternatywnej już 18 lat. Cieszymy się, że przez ten czas zaufało nam wiele osób, przez co mogliśmy pomóc wyzdrowieć tysiącom pacjentów. </p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img-circle" src="{% static "img/spa.png" %}" alt="Generic placeholder image">
           <h2>Zaangażowanie</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p>Primum non nocere - W swojej pracy do każdego pacjenta podchodzimy indywidualnie, z pełnym zaangażowaniem i  przede wszystkim z należytą troską o jego dobro. </p>
       </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
@@ -142,42 +124,22 @@
 
       <hr class="featurette-divider">
 
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+      <div class="row">
+        <div class="col-md-9">
+          <h2 class="featurette-heading">O Gabinecie Medycyny Tybetańskiej <span class="text-muted">- w skrócie</span></h2>
           <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
         </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        <div class="col-md-3">
+          <img class="featurette-image img-responsive" src="{% static "img/spa.png" %}" alt="Generic placeholder image">
         </div>
       </div>
-<div class="testimonials container" >
-
-</div>
-       
-
-<footer>
-<div class="container">
-{% page_menu "pages/menus/footer.html" %}
-
-<div class="row">
-<p class="site-info text-center">
-    {% trans "Powered by" %}
-    <a href="http://mezzanine.jupo.org">Mezzanine</a>{% ifinstalled cartridge.shop %},
-    <a href="http://cartridge.jupo.org">Cartridge</a>{% endifinstalled %}
-    {% trans "and" %}
-    <a href="http://www.djangoproject.com">Django</a>
-    <span class="separator">|</span>
-    {% trans "Theme by" %} <a target="_blank" href="http://getbootstrap.com">Bootstrap</a>
-    {% ifinstalled mezzanine.mobile %}
-    <span class="separator">|</span>
-    <a href="{% url "set_device" "mobile" %}?next={{ request.path }}">{% trans "View Mobile Site" %}</a>
-    {% endifinstalled %}
-</p>
+        <hr class="featurette-divider">
+<div class="row" >
+<h2 class="featurette-heading">Co mówią o nas, nasi pacjenci</h2>
+          <blockquote><p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p></blockquote>
 </div>
 </div>
-</footer>
-
+{% include "includes/footer.html" %}
 {% include "includes/footer_scripts.html" %}
 
 </body>
