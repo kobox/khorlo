@@ -7,6 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="keywords" content="{% block meta_keywords %}{% endblock %}">
 <meta name="description" content="{% block meta_description %}{% endblock %}">
+<meta http-equiv="cache-control" content="public" />
 <title>{% block meta_title %}{% endblock %}{% if settings.SITE_TITLE %} | {{ settings.SITE_TITLE }}{% endif %}</title>
 <link rel="shortcut icon" href="{% static "img/favicon.ico" %}">
 
@@ -47,7 +48,6 @@
 </div>
 </header>
 <body id="{% block body_id %}body{% endblock %}">
-
 
 
 <!-- Carousel
@@ -110,7 +110,7 @@
         <div class="col-lg-4">
           <img class="img-circle"src="{% static "img/exp.png" %}" alt="Generic placeholder image">
           <h2>Doświadczenie</h2>
-          <p>Prowadzimy gabinet medycyny alternatywnej już 18 lat. Cieszymy się, że przez ten czas zaufało nam wiele osób, przez co mogliśmy pomóc wyzdrowieć tysiącom pacjentów. </p>
+          <p>Gabinet Medycyny Tybetańskiej w Gdyni istnieje już 18 lat. Cieszymy się, że przez ten czas zaufało nam wiele osób, przez co mogliśmy pomóc wyzdrowieć tysiącom pacjentów. </p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img-circle" src="{% static "img/spa.png" %}" alt="Generic placeholder image">
@@ -127,7 +127,7 @@
       <div class="row">
         <div class="col-md-9">
           <h2 class="featurette-heading">O Gabinecie Medycyny Tybetańskiej <span class="text-muted">- w skrócie</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <p class="lead">Gabinet Medycyny Tybetańskiej w Gdyni.</p>
         </div>
         <div class="col-md-3">
           <img class="featurette-image img-responsive" src="{% static "img/spa.png" %}" alt="Generic placeholder image">
@@ -136,7 +136,8 @@
         <hr class="featurette-divider">
 <div class="row" >
 <h2 class="featurette-heading">Co mówią o nas, nasi pacjenci</h2>
-          <blockquote><p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p></blockquote>
+          <blockquote><p>Gorąco polecam, odpowiednie warunki, rzeczowe podejście, konkretnie, z informacją i można czuć się pewnie i spokojnie. Wszystko higienicznie i czysto, tak jak tylko to może być.
+              <br/>Norb</p></blockquote>
 </div>
 </div>
 {% include "includes/footer.html" %}

@@ -23,10 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/khorlo/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="138" column="248" selection-start="6991" selection-end="6991" vertical-scroll-proportion="0.0" vertical-offset="2060" max-vertical-offset="2718">
+            <state line="13" column="18" selection-start="709" selection-end="709" vertical-scroll-proportion="-2.4649682" vertical-offset="1782" max-vertical-offset="2736">
               <folding />
             </state>
           </provider>
@@ -35,25 +35,29 @@
       <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="232" column="18" selection-start="8008" selection-end="8008" vertical-scroll-proportion="0.0" vertical-offset="3186" max-vertical-offset="6732">
+            <state line="311" column="6" selection-start="10938" selection-end="10938" vertical-scroll-proportion="0.0" vertical-offset="5347" max-vertical-offset="6732">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/khorlo/templates/base.html">
+      <file leaf-file-name="primary.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/khorlo/templates/pages/menus/primary.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="141" column="0" selection-start="4513" selection-end="4549" vertical-scroll-proportion="0.0" vertical-offset="2065" max-vertical-offset="2736">
-              <folding />
+            <state line="0" column="33" selection-start="33" selection-end="33" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="468">
+              <folding>
+                <marker date="1390599024478" expanded="true" signature="89:686" placeholder="..." />
+                <marker date="1390599024478" expanded="true" signature="267:335" placeholder="..." />
+                <marker date="1390599024478" expanded="true" signature="423:608" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="services.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="services.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/khorlo/templates/pages/services.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="119" column="0" selection-start="4360" selection-end="4360" vertical-scroll-proportion="0.7537994" vertical-offset="1646" max-vertical-offset="2502">
+            <state line="5" column="22" selection-start="184" selection-end="184" vertical-scroll-proportion="-3.3333333" vertical-offset="0" max-vertical-offset="2502">
               <folding />
             </state>
           </provider>
@@ -62,7 +66,7 @@
       <file leaf-file-name="carousel.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/khorlo/static/css/carousel.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="145" column="7" selection-start="3455" selection-end="3459" vertical-scroll-proportion="0.0" vertical-offset="2387" max-vertical-offset="5076">
+            <state line="79" column="25" selection-start="2135" selection-end="2135" vertical-scroll-proportion="0.0" vertical-offset="929" max-vertical-offset="5076">
               <folding />
             </state>
           </provider>
@@ -85,10 +89,13 @@
         <option value="$PROJECT_DIR$/khorlo/templates/services.html" />
         <option value="$PROJECT_DIR$/khorlo/templates/base.html" />
         <option value="$PROJECT_DIR$/khorlo/static/css/carousel.css" />
-        <option value="$PROJECT_DIR$/khorlo/templates/index.html" />
-        <option value="$PROJECT_DIR$/khorlo/templates/includes/footer.html" />
         <option value="$PROJECT_DIR$/templates/pages/form.html" />
         <option value="$PROJECT_DIR$/khorlo/templates/pages/services.html" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/urls.py" />
+        <option value="$PROJECT_DIR$/settings.py" />
+        <option value="$PROJECT_DIR$/khorlo/templates/index.html" />
+        <option value="$PROJECT_DIR$/khorlo/templates/includes/footer.html" />
       </list>
     </option>
   </component>
@@ -226,6 +233,54 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="khorlo_mez" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="khorlo_mez" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="khorlo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="menus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="khorlo_mez" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="khorlo_mez" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="khorlo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="includes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -234,13 +289,13 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.29583332" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="appearance" />
+    <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -341,7 +396,27 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="khorlo_mez" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
@@ -367,27 +442,7 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="khorlo_mez" />
-      <option name="launchJavascriptDebuger" value="false" />
-      <option name="port" value="8000" />
-      <option name="host" value="" />
-      <option name="additionalOptions" value="" />
-      <option name="browserUrl" value="" />
-      <option name="runTestServer" value="false" />
-      <option name="runNoReload" value="false" />
-      <option name="useCustomRunCommand" value="false" />
-      <option name="customRunCommand" value="" />
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -478,11 +533,11 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21839081" sideWeight="0.6712517" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23137535" sideWeight="0.6712517" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287483" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287483" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3278237" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -508,10 +563,15 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21623564" sideWeight="0.6712517" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287483" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287483" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -527,26 +587,82 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/khorlo/static/css/carousel.css">
+    <entry file="file://$PROJECT_DIR$/khorlo/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="145" column="7" selection-start="3459" selection-end="3459" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5076">
+        <state line="3" column="0" selection-start="154" selection-end="154" vertical-scroll-proportion="0.0" vertical-offset="2032" max-vertical-offset="2718">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.virtualenvs/khorlo_mez/local/lib/python2.7/site-packages/mezzanine/core/models.py">
+    <entry file="file://$PROJECT_DIR$/khorlo/templates/pages/menus/primary.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="29" selection-start="3524" selection-end="3524" vertical-scroll-proportion="0.28080228" vertical-offset="1280" max-vertical-offset="8028" />
+        <state line="0" column="33" selection-start="33" selection-end="33" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="468">
+          <folding>
+            <marker date="1390599024478" expanded="true" signature="89:686" placeholder="..." />
+            <marker date="1390599024478" expanded="true" signature="267:335" placeholder="..." />
+            <marker date="1390599024478" expanded="true" signature="423:608" placeholder="..." />
+          </folding>
+        </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.virtualenvs/khorlo_mez/local/lib/python2.7/site-packages/mezzanine/core/admin.py">
+    <entry file="file://$PROJECT_DIR$/khorlo/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="20" selection-start="3233" selection-end="3258" vertical-scroll-proportion="0.56160456" vertical-offset="1012" max-vertical-offset="3978" />
+        <state line="141" column="0" selection-start="4513" selection-end="4549" vertical-scroll-proportion="0.0" vertical-offset="2065" max-vertical-offset="2736">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/khorlo/admin.py">
+    <entry file="file://$PROJECT_DIR$/khorlo/templates/pages/services.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="32" selection-start="168" selection-end="168" vertical-scroll-proportion="0.07736389" vertical-offset="0" max-vertical-offset="698" />
+        <state line="119" column="0" selection-start="4360" selection-end="4360" vertical-scroll-proportion="0.0" vertical-offset="1561" max-vertical-offset="2502">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/khorlo/static/css/carousel.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="25" selection-start="2135" selection-end="2135" vertical-scroll-proportion="0.0" vertical-offset="929" max-vertical-offset="5076">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/khorlo/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="154" selection-end="154" vertical-scroll-proportion="0.0" vertical-offset="1944" max-vertical-offset="2718">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/khorlo/templates/pages/menus/primary.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="33" selection-start="33" selection-end="33" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="468">
+          <folding>
+            <marker date="1390599024478" expanded="true" signature="89:686" placeholder="..." />
+            <marker date="1390599024478" expanded="true" signature="267:335" placeholder="..." />
+            <marker date="1390599024478" expanded="true" signature="423:608" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/khorlo/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="141" column="0" selection-start="4513" selection-end="4549" vertical-scroll-proportion="0.0" vertical-offset="2065" max-vertical-offset="2736">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/khorlo/templates/pages/services.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="119" column="0" selection-start="4360" selection-end="4360" vertical-scroll-proportion="0.0" vertical-offset="1561" max-vertical-offset="2502">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/khorlo/static/css/carousel.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="25" selection-start="2135" selection-end="2135" vertical-scroll-proportion="0.0" vertical-offset="929" max-vertical-offset="5076">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/khorlo/models.py">
@@ -576,25 +692,6 @@
         <state line="0" column="0" selection-start="0" selection-end="25" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="414" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/khorlo/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="141" column="0" selection-start="4513" selection-end="4549" vertical-scroll-proportion="0.0" vertical-offset="2065" max-vertical-offset="2736">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/khorlo/static/css/carousel.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="145" column="7" selection-start="3455" selection-end="3459" vertical-scroll-proportion="0.0" vertical-offset="2387" max-vertical-offset="5076">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/khorlo/templates/includes/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="6" selection-start="556" selection-end="556" vertical-scroll-proportion="0.4023845" vertical-offset="0" max-vertical-offset="864" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/khorlo/templates/pages/form.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="14" selection-start="939" selection-end="939" vertical-scroll-proportion="0.9120715" vertical-offset="0" max-vertical-offset="756">
@@ -602,23 +699,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/khorlo/templates/index.html">
+    <entry file="file://$PROJECT_DIR$/local_settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="138" column="248" selection-start="6991" selection-end="6991" vertical-scroll-proportion="0.0" vertical-offset="2060" max-vertical-offset="2718">
+        <state line="1" column="12" selection-start="9" selection-end="13" vertical-scroll-proportion="0.027231468" vertical-offset="0" max-vertical-offset="661" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="16" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/khorlo/static/css/carousel.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="25" selection-start="2135" selection-end="2135" vertical-scroll-proportion="0.0" vertical-offset="929" max-vertical-offset="5076">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="42" selection-start="616" selection-end="617" vertical-scroll-proportion="0.4641834" vertical-offset="0" max-vertical-offset="1836">
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/khorlo/templates/includes/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="40" selection-start="203" selection-end="203" vertical-scroll-proportion="0.16119403" vertical-offset="0" max-vertical-offset="864">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/khorlo/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="141" column="0" selection-start="4513" selection-end="4549" vertical-scroll-proportion="2.0955224" vertical-offset="1134" max-vertical-offset="2736">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/khorlo/templates/pages/menus/primary.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="33" selection-start="33" selection-end="33" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="468">
+          <folding>
+            <marker date="1390599024478" expanded="true" signature="89:686" placeholder="..." />
+            <marker date="1390599024478" expanded="true" signature="267:335" placeholder="..." />
+            <marker date="1390599024478" expanded="true" signature="423:608" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/khorlo/templates/pages/services.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="22" selection-start="184" selection-end="184" vertical-scroll-proportion="-3.3333333" vertical-offset="0" max-vertical-offset="2502">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="232" column="18" selection-start="8008" selection-end="8008" vertical-scroll-proportion="0.0" vertical-offset="3186" max-vertical-offset="6732">
+        <state line="311" column="6" selection-start="10938" selection-end="10938" vertical-scroll-proportion="0.0" vertical-offset="5347" max-vertical-offset="6732">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/khorlo/templates/pages/services.html">
+    <entry file="file://$PROJECT_DIR$/khorlo/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="119" column="0" selection-start="4360" selection-end="4360" vertical-scroll-proportion="0.7537994" vertical-offset="1646" max-vertical-offset="2502">
+        <state line="13" column="18" selection-start="709" selection-end="709" vertical-scroll-proportion="-2.4649682" vertical-offset="1782" max-vertical-offset="2736">
           <folding />
         </state>
       </provider>
