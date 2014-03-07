@@ -11,8 +11,8 @@
 {% else %}
 <div class="form-group input_{{ field.id_for_label }} {{ field.field.type }}
     {% if field.errors %} has-error{% endif %}">
-    {% if field.label %}<label class="control-label" for="{{ field.auto_id }}">{{ field.label }}</label>{% endif %}
-    {{ field }}
+    {% if field.label %}<label class="col-lg-3 control-label" for="{{ field.auto_id }}">{{ field.label }}</label>{% endif %}
+    <div class="col-lg-9">{{ field }}
     {% if field.errors %}
     <p class="help-block">
         {% for e in field.errors %}
@@ -21,7 +21,7 @@
     </p>
     {% elif field.help_text %}
     <p class="help-block">{{ field.help_text }}</p>
-    {% endif %}
+    {% endif %}</div>
 </div>
 {% endif %}
 {% endfor %}

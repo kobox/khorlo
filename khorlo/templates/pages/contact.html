@@ -1,0 +1,60 @@
+{% extends "base50.html" %}
+
+{% load mezzanine_tags keyword_tags i18n %}
+
+{% block meta_title %}{{ page.meta_title }}{% endblock %}
+
+{% block meta_keywords %}{% metablock %}
+{% keywords_for page as keywords %}
+{% for keyword in keywords %}
+    {% if not forloop.first %}, {% endif %}
+    {{ keyword }}
+{% endfor %}
+{% endmetablock %}{% endblock %}
+
+{% block meta_description %}{% metablock %}
+{{ page.description }}
+{% endmetablock %}{% endblock %}
+
+{% block title %}
+{% editable page.title %}{{ page.title }}{% endeditable %}
+{% endblock %}
+
+{% block extra_js %}
+{{ block.super }}
+<script>
+$(function() {$('.mezzanine-form :input:visible:enabled:first').focus();});
+</script>
+{% endblock %}
+
+{% block main %}
+{{ block.super }}
+{% if request.GET.sent %}
+    {% editable page.form.response %}
+    {{ page.form.response|richtext_filters|safe }}
+    {% endeditable %}
+{% else %}
+    {% with page.form as page_form %}
+    {% editable page_form.content %}
+    {{ page_form.content|richtext_filters|safe }}
+    {% endeditable %}
+    {% endwith %}
+
+    {% errors_for form %}
+
+    <form class="mezzanine-form form-horizontal" method="post"{% if form.is_multipart %} enctype="multipart/form-data"{% endif %}>
+        <fieldset>{% fields_for form %}</fieldset>
+        <div class="form-actions col-lg-10 col-lg-offset-3">
+            <input class="btn btn-info btn-lg" type="submit" value="{% blocktrans %} Wyślij {%endblocktrans%}">
+        </div>
+    </form>
+{% endif %}
+{% endblock %}
+{% block right_panel %}
+ <div class="fluid-wrapper">
+   <iframe class="well well-sm"
+           src="https://mapsengine.google.com/map/embed?mid=zTsqI6jeASMo.k-HR8VoZd6wA" width="530" height="470" frameborder="0"></iframe>
+</div>
+{##}
+{% endblock %}
+{% comment %}{{ page.form.button_text }}{% endcomment %}
