@@ -48,7 +48,14 @@
 </div>
 </header>
 <body id="{% block body_id %}body{% endblock %}">
-
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pl_PL/all.js#xfbml=1&appId=1424129997831614";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 <!-- Carousel
     ================================================== -->
@@ -66,7 +73,7 @@
             <div class="carousel-caption">
               <h1>Medycyna Tybetańska blisko Ciebie.</h1>
               <p> praktykowana od wieków w Tybecie oraz terenach sąsiadujących, tradycyjna forma medycyny, która wykorzystuje kompleksowe podejście diagnostyczne, np. analizę pulsu, języka, diety, zachowania, kondycji ciała. Szeroko są stosowane lekarstwa na bazie naturalnych składników roślinnych i mineralnych.</p>
-              <p class="clean"><a class="btn btn-lg btn-primary" href="#" role="button">Czytaj więcej...</a></p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Czytaj więcej...</a></p>
             </div>
           </div>
         </div>
@@ -139,7 +146,7 @@
           <blockquote><p>Gorąco polecam, odpowiednie warunki, rzeczowe podejście, konkretnie, z informacją i można czuć się pewnie i spokojnie. Wszystko higienicznie i czysto, tak jak tylko to może być.
               <br/>Norb</p></blockquote>
 </div>
-</div>
+
 {% include "includes/footer.html" %}
 {% include "includes/footer_scripts.html" %}
 

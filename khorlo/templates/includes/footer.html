@@ -24,20 +24,26 @@ Sobota.: 9.00-15.00
 </div>
 {% comment %}<div class="col-lg-3"><img  src="{% static "img/map.png" %}"alt="Wieloletnie Tradycja"></div>{% endcomment %}
 </div>
+<div class="row text-center">
+Polub nas na facebooku <div class="fb-like" data-href="http://www.khorlo.pl" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
+</div>
 <div class="row">
 <p class="site-info text-center">
+    {% comment %}<img src="http://www.python.org/static/community_logos/python-powered-w-70x28.png"/>
     {% trans "Powered by" %}
     <a href="http://mezzanine.jupo.org">Mezzanine</a>{% ifinstalled cartridge.shop %},
     <a href="http://cartridge.jupo.org">Cartridge</a>{% endifinstalled %}
+
     {% trans "and" %}
-    <a href="http://www.djangoproject.com">Django</a>
-    <span class="separator">|</span>
-    Projekt i wykonanie <a target="_blank" href="http://studioit.com.pl"><img src="{% static "img/studio.png" %}"/></a>
+    <a href="http://www.djangoproject.com">Django</a>{% endcomment %}
+{#    <span class="separator">|</span>#}
+{#    </br>Projekt i wykonanie <a target="_blank" href="http://studioit.com.pl"><img src="{% static "img/studio.png" %}"/></a>#}
     {% ifinstalled mezzanine.mobile %}
     <span class="separator">|</span>
     <a href="{% url "set_device" "mobile" %}?next={{ request.path }}">{% trans "View Mobile Site" %}</a>
     {% endifinstalled %}
 </p>
 </div>
+
 </div>
 </footer>
