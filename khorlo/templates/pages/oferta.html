@@ -1,13 +1,19 @@
 <!doctype html>
 <html lang="{{ LANGUAGE_CODE }}"{% if LANGUAGE_BIDI %} dir="rtl"{% endif %}>
-{% load pages_tags mezzanine_tags i18n future staticfiles %}
+{% load pages_tags mezzanine_tags keyword_tags i18n future staticfiles %}
 
 <head>
 <meta http-equiv="Content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="keywords" content="{% block meta_keywords %}{% endblock %}">
-<meta name="description" content="{% block meta_description %}{% endblock %}">
-<title>{% block meta_title %}{% endblock %}{% if settings.SITE_TITLE %} | {{ settings.SITE_TITLE }}{% endif %}</title>
+<meta name="keywords" content="{% block meta_keywords %}{% metablock %}
+{% keywords_for page as keywords %}
+{% for keyword in keywords %}
+    {% if not forloop.first %}, {% endif %}
+    {{ keyword }}
+{% endfor %}
+{% endmetablock %}{% endblock %}">
+<meta name="description" content="{% block meta_description %}{{ page.description }}{% endblock %}">
+<title>{% block meta_title %}{{ page.meta_title }}{% endblock %}{% if settings.SITE_TITLE %} | {{ settings.SITE_TITLE }}{% endif %}</title>
 <link rel="shortcut icon" href="{% static "img/favicon.ico" %}">
 
 {% compress css %}
@@ -40,11 +46,22 @@
 {% block extra_head %}{% endblock %}
 </head>
 <header>
-<div class="container">
-   <div class="navbar-wrapper">
-     {% page_menu "pages/menus/primary.html" %}
-   </div>
-</div>
+<div class="navbar " role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"><img src="{% static "img/logo.png" %}"/></a>
+        </div>
+        <div class="collapse navbar-collapse">
+           {% page_menu "pages/menus/primary.html" %}
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
 </header>
 <div class="container">
 

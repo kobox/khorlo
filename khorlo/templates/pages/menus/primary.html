@@ -1,7 +1,7 @@
 {% load pages_tags i18n future %}
 
 {% spaceless %}
-<ul id="primary-menu" class="navlinks">
+<ul id="primary-menu" class="nav navbar-nav">
     {% for page in page_branch %}
     {% if not has_home and page.is_primary and forloop.first %}
     <li id="primary-menu-home" class="first{% if on_home %} active{% endif %}">
