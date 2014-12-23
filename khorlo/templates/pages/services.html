@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="{{ LANGUAGE_CODE }}"{% if LANGUAGE_BIDI %} dir="rtl"{% endif %}>
+{% load pages_tags mezzanine_tags i18n future staticfiles %}
+
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="{% block meta_keywords %}{% endblock %}">
+<meta name="description" content="{% block meta_description %}{% endblock %}">
+<title>{% block meta_title %}{% endblock %}{% if settings.SITE_TITLE %} | {{ settings.SITE_TITLE }}{% endif %}</title>
+<link rel="shortcut icon" href="{% static "img/favicon.ico" %}">
+
+{% compress css %}
+<link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}">
+<link rel="stylesheet" href="{% static "css/carousel.css" %}">
+<link rel="stylesheet" href="{% static "css/bootstrap-theme.css" %}">
+{% if LANGUAGE_BIDI %}
+<link rel="stylesheet" href="{% static "css/rtl.css" %}">
+{% endif %}
+{% ifinstalled cartridge.shop %}
+<link rel="stylesheet" href="{% static "css/cartridge.css" %}">
+{% if LANGUAGE_BIDI %}
+<link rel="stylesheet" href="{% static "css/cartridge.rtl.css" %}">
+{% endif %}
+{% endifinstalled %}
+{% block extra_css %}{% endblock %}
+{% endcompress %}
+
+{% compress js %}
+<script src="{% static "mezzanine/js/"|add:settings.JQUERY_FILENAME %}"></script>
+<script src="{% static "js/bootstrap.min.js" %}"></script>
+<script src="{% static "js/bootstrap-extras.js" %}"></script>
+{% block extra_js %}{% endblock %}
+{% endcompress %}
+<!--[if lt IE 9]>
+<script src="{% static "js/html5shiv.js" %}"></script>
+<script src="{% static "js/respond.min.js" %}"></script>
+<![endif]-->
+
+{% block extra_head %}{% endblock %}
+</head>
+<header>
+<div class="container">
+   <div class="navbar-wrapper">
+     {% page_menu "pages/menus/primary.html" %}
+   </div>
+</div>
+</header>
+<div class="container">
+
+{% nevercache %}
+{% if messages %}
+<div class="messages">
+{% for message in messages %}
+<div class="alert alert-dismissable alert-{{ message.tags }}" data-alert="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    {{ message }}
+</div>
+{% endfor %}
+</div>
+{% endif %}
+{% endnevercache %}
+<h1>Usługi</h1>
+<h1>{% block title %}{% endblock %}</h1>
+
+<ul class="breadcrumb">
+{% spaceless %}
+{% block breadcrumb_menu %}{% page_menu "pages/menus/breadcrumb.html" %}{% endblock %}
+{% endspaceless %}
+</ul>
+
+</div>
+<br/>
+<body id="{% block body_id %}body{% endblock %}">
+
+{% comment %}<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+<div class="container">
+<div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">{% trans "Toggle Navigation" %}</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+    {% if settings.SITE_TITLE %}<a class="navbar-brand" href="/">{{ settings.SITE_TITLE }}</a>{% endif %}
+    {% if settings.SITE_TAGLINE %}<p class="navbar-text visible-lg">{{ settings.SITE_TAGLINE }}</p>{% endif %}
+</div>
+<div class="navbar-collapse collapse">
+    {% search_form "all" %}
+    {% page_menu "pages/menus/dropdown.html" %}
+</div>
+</div>
+</div>{% endcomment %}
+
+<!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-3">
+          <img class="img-circle" src="{% static "img/med.png" %}"alt="Wieloletnie Tradycja">
+          <h2>Ziołolecznictwo</h2>
+        </div><!-- /.col-lg-3 -->
+        <div class="col-lg-3">
+          <img class="img-circle"src="{% static "img/massage.png" %}" alt="Generic placeholder image">
+          <h2>Masaże</h2>
+
+        </div><!-- /.col-lg-3 -->
+        <div class="col-lg-3">
+          <img class="img-circle" src="{% static "img/acupuncture.png" %}" alt="Generic placeholder image">
+          <h2>Akupunktura</h2>
+
+      </div><!-- /.col-lg-3 -->
+          <div class="col-lg-3">
+          <img class="img-circle" src="{% static "img/acupressure.png" %}" alt="Generic placeholder image">
+          <h2>Akupresura</h2>
+
+      </div><!-- /.col-lg-3 -->
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+{% include "includes/footer.html" %}
+
+{% include "includes/footer_scripts.html" %}
+
+</body>
+</html>
