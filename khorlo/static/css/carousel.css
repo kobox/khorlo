@@ -62,6 +62,10 @@ article a{
 article img {
     max-width: 100%;
     height: auto;
+    padding: 5px;
+}
+.img_left {
+float: left; 
 }
 footer {
     /*background: url("../img/footer_grn_bg.png") repeat scroll 0 0 rgba(0, 0, 0, 0);*/
