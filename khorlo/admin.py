@@ -3,7 +3,7 @@ from django.contrib import admin
 from mezzanine.core.admin import DisplayableAdmin, TabularDynamicInlineAdmin
 #from .models import Author, Book
 
-author_extra_fieldsets = ((None, {"fields": ("dob",)}),)
+#author_extra_fieldsets = ((None, {"fields": ("dob",)}),)
 
 # class BookInline(TabularDynamicInlineAdmin):
 #     model = Book
